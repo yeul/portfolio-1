@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Decima Pro Bold";
+  src: url("/static/fonts/Decima-Pro-Bold.woff") format("woff"), url("/static/fonts/Decima-Pro-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Decima Pro Bold Italic";
+  src: url("/static/fonts/Decima-Pro-Bold-Italic.woff") format("woff"), url("/static/fonts/Decima-Pro-Bold-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Corsa Grotesk XBold Italic";
+  src: url("/static/fonts/Corsa-Grotesk-XBold-Italic.woff") format("woff"), url("/static/fonts/Corsa-Grotesk-XBold-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Qanelas-Light";
+  src: url("/static/fonts/Qanelas-Light.woff") format("woff"), url("/static/fonts/Qanelas-Light.ttf") format("truetype");
+}
+
+body {
+  // background-color: #0a0a0a;
+  background-color: #000;
+  font-family: "Decima Pro Bold";
+  color: #fff;
+}
