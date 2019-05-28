@@ -6,7 +6,7 @@ class Button extends React.Component {
   render() {
     return (
       <div className='scroll-btn'>
-        <button className='explore-btn' type='button'>
+        <button className='btn' type='button'>
           Explore
         </button>
       </div>

@@ -1,0 +1,21 @@
+@import "./colors.scss";
+
+.scrollTop-btn {
+  position: absolute;
+  right: 30px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: $primary;
+  color: #fff;
+  font-size: 25px;
+  transition: all 0.5s ease-in-out;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
