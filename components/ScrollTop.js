@@ -13,7 +13,6 @@ class ScrollTop extends React.Component {
   render() {
     return (
       <div>
-        <p>Hey look a button!</p>
         <button className='scrollTop-btn' type='button' aria-label='Back to Top' onClick={this.scrollToTop}>
           ↥
         </button>

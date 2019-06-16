@@ -4,7 +4,7 @@
   .phobos-moon-img {
     height: 400px;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 300px;
   }
 }
 
@@ -29,9 +29,55 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  .mars-globe-img {
-    margin-top: 100px;
-    max-width: 100vw;
-    height: 100%;
+  font-family: "Qanelas-Light";
+  font-size: 15px;
+  .mars-globe-container {
+    // position: absolute;
+    .mars-globe-img {
+      margin-top: 100px;
+      max-width: 100vw;
+      height: 100%;
+    }
+    h2 {
+      margin-top: -60%;
+      width: 100%;
+      text-align: center;
+      font-family: "Decima Pro Bold";
+      font-size: 65px;
+      letter-spacing: 1mm;
+      span {
+        border: 4px solid white;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .about-mars-left,
+  .about-mars-right {
+    max-width: 20%;
+    ul {
+      flex-direction: column;
+      list-style: none;
+      margin-top: 130px;
+      padding: 0px;
+      li {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .false {
+      opacity: 0;
+      transition: 0.5s ease-in;
+    }
+    .true {
+      transition: opacity 0.5s ease-in;
+    }
+  }
+  .about-mars-left {
+    padding-right: 50px;
+  }
+  .about-mars-right {
+    padding-left: 50px;
   }
 }
