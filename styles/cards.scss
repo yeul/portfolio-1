@@ -1,0 +1,116 @@
+@import "./colors.scss";
+
+@keyframes fadeDown {
+  from {
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    height: 1rem;
+  }
+  to {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.cards {
+  margin-top: 300px;
+  .row {
+    max-width: 90vw;
+    margin: 0px auto;
+    .card {
+      height: 600px;
+      background-color: $card-bg;
+      border: none;
+      border-radius: 2px;
+      margin-top: 50px;
+      .imageHeader {
+        margin-top: 10px;
+        letter-spacing: 2px;
+        transition: 0.25s ease-in;
+        height: 100px;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          color: $link-hover;
+          transition: 0.25s ease-in;
+        }
+        .subTitle {
+          margin-top: 10px;
+          text-align: center;
+          color: #616060;
+          font-size: 11px;
+        }
+      }
+      .card-img {
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
+      .download-btn {
+        border-bottom: 2px solid #1f1e1e;
+        padding: 15px;
+        text-align: center;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 18px;
+          width: 100%;
+        }
+        a {
+          position: absolute;
+          color: inherit;
+        }
+        i {
+          font-size: 40px;
+        }
+        &.true {
+          span,
+          br {
+            opacity: 0;
+            transition: 0.25s ease-in;
+          }
+          i {
+            animation-name: fadeDown;
+            opacity: 0;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            transition: 0.3s;
+            &:hover {
+              color: $link-hover;
+              transition: 0.3s;
+            }
+          }
+        }
+        &.false {
+          span {
+            opacity: 1;
+            transition: 0.25s ease-in;
+          }
+          i {
+            opacity: 0;
+            position: absolute;
+          }
+        }
+      }
+      .card-text {
+        padding: 10px;
+        font-size: 13px;
+        color: #616060;
+      }
+    }
+  }
+}
