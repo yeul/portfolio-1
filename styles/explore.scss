@@ -1,24 +1,32 @@
 .phobos {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  // .phobos-info,
+  // .phobos-title {
+  //   max-width: 60%;
+  //   margin-right: 250px;
+  // }
   .phobos-moon-img {
-    height: 400px;
+    max-width: 30%;
     margin-left: 50px;
     margin-top: 300px;
   }
 }
 
 .deimos {
-  height: 430px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   .deimos-title {
     font-family: "Decima Pro Light";
-    margin-left: 300px;
+  }
+  .deimos-info,
+  .deimos-title {
+    max-width: 60%;
+    margin-left: 250px;
   }
   .deimos-moon-img {
-    height: 100%;
+    max-width: 60%;
+    margin-left: 150px;
     margin-right: 50px;
   }
 }

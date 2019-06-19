@@ -8,6 +8,7 @@ import "../styles/landing.scss";
 import "../styles/explore.scss";
 import "../styles/cards.scss";
 import "../styles/astronaut.scss";
+import "../styles/credit.scss";
 import "../styles/footer.scss";
 
 class App extends React.Component {
@@ -47,23 +48,27 @@ class App extends React.Component {
                   src='../static/images/Phobos.png'
                 />
               </div>
-              <div className='deimos'>
-                <h2 className='deimos-title'>
-                  <span>Deimos</span>
-                </h2>
-                <p>
-                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a
-                  mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
-                </p>
-                <img
-                  data-aos='fade-left'
-                  data-aos-offset='200'
-                  data-aos-delay='50'
-                  data-aos-duration='1000'
-                  data-aos-easing='ease-in-out'
-                  className='deimos-moon-img'
-                  src='../static/images/Deimos.png'
-                />
+              <div className='deimos row no-gutters'>
+                <div className='col-lg-6'>
+                  <h2 className='deimos-title'>
+                    <span>Deimos</span>
+                  </h2>
+                  <p className='deimos-info'>
+                    Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has
+                    a mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+                  </p>
+                </div>
+                <div className='col-lg-6'>
+                  <img
+                    data-aos='fade-left'
+                    data-aos-offset='200'
+                    data-aos-delay='50'
+                    data-aos-duration='1000'
+                    data-aos-easing='ease-in-out'
+                    className='deimos-moon-img'
+                    src='../static/images/Deimos.png'
+                  />
+                </div>
               </div>
               <div className='explore-mars'>
                 <div className='about-mars-left'>
@@ -253,7 +258,31 @@ class App extends React.Component {
         </div>
         <div className='container-fluid'>
           <div className='row no-gutters'>
-            <div className='footer'>Hello</div>
+            <div className='credit-section'>
+              <span>Images & Mars Data Provided By:</span>
+              <div className='logos'>
+                <a href='https://www.nasa.gov/'>
+                  <img className='nasa-logo' src='../static/images/NASA_logo.svg' alt='The NASA insignia' />
+                </a>
+                <a href='https://hirise.lpl.arizona.edu/'>
+                  <img className='arizona-logo' src='../static/images/Arizona_logo.svg' alt='The University of Arizona insignia' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='container-fluid'>
+          <div className='row no-gutters'>
+            <div className='footer-section'>
+              <div>
+                <a href='mailto:mpscqw@gmail.com' target='_top'>
+                  CONTACT
+                </a>
+                <a href='https://github.com/yeul' target='_blank'>
+                  <span className='copyright'>©2019 GITHUB.COM/YEUL</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         {/* <div className='container-fluid'>
