@@ -36,40 +36,49 @@ class App extends React.Component {
         </div>
         <div className='container-fluid'>
           <div className='row no-gutters'>
-            <div className='col-lg-12'>
-              <div className='phobos'>
+            <div className='phobos row no-gutters'>
+              <img
+                data-aos='fade-right'
+                data-aos-offset='200'
+                data-aos-delay='50'
+                data-aos-duration='1000'
+                data-aos-easing='ease-in-out'
+                className='phobos-moon-img'
+                src='../static/images/Phobos.png'
+              />
+              <div className='col-lg-6'>
+                <h2 className='phobos-title'>
+                  <span>PHOBOS</span>
+                </h2>
+                <p className='phobos-info'>
+                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a
+                  mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+                </p>
+              </div>
+            </div>
+            <div className='deimos row no-gutters'>
+              <div className='col-lg-6'>
+                <h2 className='deimos-title'>
+                  <span>Deimos</span>
+                </h2>
+                <p className='deimos-info'>
+                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a
+                  mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+                </p>
+              </div>
+              <div className='col-lg-6'>
                 <img
-                  data-aos='fade-right'
+                  data-aos='fade-left'
                   data-aos-offset='200'
                   data-aos-delay='50'
                   data-aos-duration='1000'
                   data-aos-easing='ease-in-out'
-                  className='phobos-moon-img'
-                  src='../static/images/Phobos.png'
+                  className='deimos-moon-img'
+                  src='../static/images/Deimos.png'
                 />
               </div>
-              <div className='deimos row no-gutters'>
-                <div className='col-lg-6'>
-                  <h2 className='deimos-title'>
-                    <span>Deimos</span>
-                  </h2>
-                  <p className='deimos-info'>
-                    Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has
-                    a mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
-                  </p>
-                </div>
-                <div className='col-lg-6'>
-                  <img
-                    data-aos='fade-left'
-                    data-aos-offset='200'
-                    data-aos-delay='50'
-                    data-aos-duration='1000'
-                    data-aos-easing='ease-in-out'
-                    className='deimos-moon-img'
-                    src='../static/images/Deimos.png'
-                  />
-                </div>
-              </div>
+            </div>
+            <div className='col-lg-12'>
               <div className='explore-mars'>
                 <div className='about-mars-left'>
                   <ul className={this.state.currentlyHovered}>
@@ -174,7 +183,7 @@ class App extends React.Component {
         </div>
         <div
           data-aos='fade-up'
-          data-aos-offset='200'
+          data-aos-offset='100'
           data-aos-delay='50'
           data-aos-duration='1000'
           data-aos-easing='ease-in-out'

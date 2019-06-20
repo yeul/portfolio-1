@@ -1,11 +1,16 @@
 .phobos {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  // .phobos-info,
-  // .phobos-title {
-  //   max-width: 60%;
-  //   margin-right: 250px;
-  // }
+  // align-items: flex-end;
+  .phobos-info,
+  .phobos-title {
+    flex-direction: row;
+    // display: flex;
+    // align-content: flex-end;
+    max-width: 60%;
+    margin-right: 250px;
+  }
   .phobos-moon-img {
     max-width: 30%;
     margin-left: 50px;
