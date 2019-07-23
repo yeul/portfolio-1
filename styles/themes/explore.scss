@@ -1,0 +1,36 @@
+@import "../base/typography";
+
+.deimos {
+  .deimos-title {
+    font-family: "Decima Pro Light";
+  }
+}
+
+.explore-mars {
+  font-family: "Qanelas-Light";
+  font-size: 15px;
+  .mars-globe-container {
+    h2 {
+      margin-top: -60%;
+      width: 100%;
+      text-align: center;
+      font-family: "Decima Pro Bold";
+      font-size: 65px;
+      letter-spacing: 1mm;
+      span {
+        border: 4px solid white;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .about-mars-left,
+  .about-mars-right {
+    .false {
+      opacity: 0;
+      transition: 0.5s ease-in;
+    }
+    .true {
+      transition: opacity 0.5s ease-in;
+    }
+  }
+}

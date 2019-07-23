@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/scrolltop.scss";
+import "../styles/main.scss";
 
 class ScrollTop extends React.Component {
   scrollToTop() {

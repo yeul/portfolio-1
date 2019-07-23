@@ -4,12 +4,7 @@ import ScrollTop from "../components/ScrollTop";
 import Hero from "../components/Hero";
 import Card from "../components/Card";
 import "../styles/main.scss";
-import "../styles/landing.scss";
-import "../styles/explore.scss";
-import "../styles/cards.scss";
-import "../styles/astronaut.scss";
-import "../styles/credit.scss";
-import "../styles/footer.scss";
+// import "../styles/astronaut.scss";
 
 class App extends React.Component {
   constructor(props) {
@@ -51,8 +46,8 @@ class App extends React.Component {
                   <span>PHOBOS</span>
                 </h2>
                 <p className='phobos-info'>
-                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a
-                  mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a mean radius of 6.2 km (3.9
+                  mi) and takes 30.3 hours to orbit Mars.
                 </p>
               </div>
             </div>
@@ -62,8 +57,8 @@ class App extends React.Component {
                   <span>Deimos</span>
                 </h2>
                 <p className='deimos-info'>
-                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a
-                  mean radius of 6.2 km (3.9 mi) and takes 30.3 hours to orbit Mars.
+                  Deimos (systematic designation: Mars II) is the smaller and outermost of the two natural satellites of the planet Mars. Deimos has a mean radius of 6.2 km (3.9
+                  mi) and takes 30.3 hours to orbit Mars.
                 </p>
               </div>
               <div className='col-lg-6'>

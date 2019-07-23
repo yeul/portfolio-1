@@ -1,16 +1,9 @@
-@import "../styles/colors.scss";
+@import "../themes/colors.scss";
 
 .footer-section {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   a {
     text-decoration: none;
     color: #616060;
-    padding-right: 5px;
     &:hover {
       color: $link-hover;
       transition: 0.25s ease-in;
