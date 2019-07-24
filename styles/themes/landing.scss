@@ -3,13 +3,21 @@
 
 //Planum Australe landing page hero images and associated transition animations:
 
-h1 {
+.hero-title {
   display: flex;
   justify-content: center;
   color: $primary;
   font-size: 90px;
   font-family: "Decima Pro Bold Italic";
   letter-spacing: 5mm;
+  @media #{$sm-only} {
+    text-align: center;
+    font-size: 50px;
+  }
+  @media #{$md-only} {
+    text-align: center;
+    font-size: 65px;
+  }
 }
 
 .hero-transition-images img {

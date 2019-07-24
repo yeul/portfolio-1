@@ -1,32 +1,9 @@
 .credit-section {
-  margin-top: 150px;
-  height: 200px;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: #1c1c1c;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  align-items: center;
   span {
-    margin-bottom: 20px;
     color: #616060;
   }
   .logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     filter: grayscale(100%);
-
-    .nasa-logo {
-      max-width: 150px;
-      padding-right: 20px;
-    }
-    .arizona-logo {
-      max-width: 60px;
-    }
   }
 }

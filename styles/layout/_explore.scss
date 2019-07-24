@@ -1,36 +1,43 @@
-.phobos {
+.deimos {
   display: flex;
   flex-direction: row;
   align-items: center;
-  // align-items: flex-end;
-  .phobos-info,
-  .phobos-title {
+  .deimos-info,
+  .deimos-title {
     flex-direction: row;
-    // display: flex;
-    // align-content: flex-end;
     max-width: 60%;
     margin-right: 250px;
   }
-  .phobos-moon-img {
-    max-width: 30%;
-    margin-left: 50px;
+  .deimos-moon-img {
+    max-width: 60%;
     margin-top: 300px;
   }
 }
 
-.deimos {
+.phobos {
   display: flex;
   align-items: center;
-  .deimos-info,
-  .deimos-title {
+  margin-bottom: 200px;
+  .phobos-info-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .phobos-info,
+  .phobos-title {
     max-width: 60%;
     margin-left: 250px;
   }
-  .deimos-moon-img {
+  .phobos-moon-img {
     max-width: 60%;
-    margin-left: 150px;
-    margin-right: 50px;
   }
+}
+
+.deimos-image-col,
+.phobos-image-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .explore-mars {

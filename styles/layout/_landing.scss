@@ -1,13 +1,21 @@
-.container-fluid {
-  padding: 0px;
-}
+@import "../base/media-queries.scss";
 
 //Planum Australe landing page hero images and associated transition animations:
 
-.landing {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // margin-top: 220px;
-  height: 520px;
+.hero-images-col {
+  height: 100vh;
+  img {
+    height: 100vh;
+  }
+  .hero-title-row {
+    height: 100%;
+    .hero-title-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .hero-title {
+        padding-left: 10px;
+      }
+    }
+  }
 }
