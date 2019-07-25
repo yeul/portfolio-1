@@ -1,4 +1,5 @@
 @import "../base/typography";
+@import "../base/media-queries.scss";
 
 .deimos {
   .deimos-title {
@@ -9,6 +10,9 @@
 .phobos {
   .phobos-info-col {
     text-align: right;
+    @media #{$md-and-smaller} {
+      text-align: left;
+    }
   }
 }
 

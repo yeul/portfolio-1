@@ -1,16 +1,44 @@
+@import "../base/media-queries.scss";
+
 .deimos {
   display: flex;
   flex-direction: row;
   align-items: center;
+  .deimos-info-col {
+    @media #{$md-and-smaller} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .deimos-title {
+    @media #{$md-and-smaller} {
+      margin-right: 0px;
+    }
+  }
+  .deimos-info {
+    @media #{$md-and-smaller} {
+      margin-right: 0px;
+      padding-left: 65px;
+      padding-right: 50px;
+    }
+  }
   .deimos-info,
   .deimos-title {
     flex-direction: row;
     max-width: 60%;
     margin-right: 250px;
+    @media #{$md-and-smaller} {
+      margin-right: 0px;
+      max-width: 100%;
+    }
   }
   .deimos-moon-img {
     max-width: 60%;
     margin-top: 300px;
+    @media #{$md-and-smaller} {
+      margin-top: 50px;
+    }
   }
 }
 
@@ -22,11 +50,26 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media #{$md-and-smaller} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .phobos-info {
+    @media #{$md-and-smaller} {
+      padding-left: 65px;
+      padding-right: 50px;
+    }
   }
   .phobos-info,
   .phobos-title {
     max-width: 60%;
     margin-left: 250px;
+    @media #{$md-and-smaller} {
+      margin-left: 0px;
+      max-width: 100%;
+    }
   }
   .phobos-moon-img {
     max-width: 60%;
