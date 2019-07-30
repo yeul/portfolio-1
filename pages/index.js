@@ -1,5 +1,4 @@
-import React from "react";
-import MediaQuery from "react-responsive";
+import React, { Fragment } from "react";
 
 import ScrollTop from "../components/ScrollTop";
 import Hero from "../components/Hero";
@@ -12,9 +11,10 @@ import "../styles/main.scss";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentlyHovered: "false" };
+    this.state = { currentlyHovered: "false", width: 0 };
     this.hoverOn = this.hoverOn.bind(this);
     this.hoverOff = this.hoverOff.bind(this);
+    this.windowSize = this.windowSize.bind(this);
   }
 
   hoverOn() {
@@ -25,15 +25,47 @@ class App extends React.Component {
     this.setState({ currentlyHovered: "false" });
   }
 
+  /**
+   * @description In the constructor *width* is set to 0 by default. So when the component loads initially,
+   * neither SmallDevices or LargeDevices gets returned, instead it falls back to the *else*
+   * statement. When *componentDidMount* runs, it sets *this.state.width* to the width of the display.
+   * Since *this.state* was changed in *componentDidMount*, the *render* was run again, and
+   * therefore *windowSize* is run again. This time with an actual window size in *this.state.width*;
+   * and you'll actually get either SmallDevices or LargeDevices based on your browser window width.
+   */
+  windowSize() {
+    if (this.state.width > 320 && this.state.width < 767.98) {
+      return (
+        <Fragment>
+          <SmallDevices />
+        </Fragment>
+      );
+    } else if (this.state.width > 768) {
+      return (
+        <Fragment>
+          <LargeDevices />
+        </Fragment>
+      );
+    } else {
+      return <div />;
+    }
+  }
+
+  /**
+   * @description componentDidMount only runs *after* the component renders client-side; hence we can actually get a
+   * window and therefore a window width and set it to state.
+   */
+  componentDidMount() {
+    this.setState({ width: window.innerWidth });
+  }
+
   render() {
-    // console.log(this.state);
     return (
       <React.Fragment>
         <Hero />
         <div className='explore-mars-container container-fluid'>
           <div className='row no-gutters'>
-            <LargeDevices />
-            <SmallDevices />
+            {this.windowSize()}
             <div className='col-lg-12'>
               <div className='explore-mars'>
                 <div className='about-mars-left'>
@@ -70,13 +102,12 @@ class App extends React.Component {
                     </li>
                   </ul>
                 </div>
-                {/* <img className='dotted-circle-border' src='../static/images/dotted-circle.svg' /> */}
                 <div className='mars-globe-container'>
                   <img
                     data-aos='fade-up'
                     data-aos-offset='200'
                     data-aos-delay='50'
-                    data-aos-duration='1000'
+                    data-aos-duration='2000'
                     data-aos-easing='ease-in-out'
                     data-aos-mirror='true'
                     data-aos-once='false'
@@ -90,7 +121,7 @@ class App extends React.Component {
                     data-aos='fade-up'
                     data-aos-offset='200'
                     data-aos-delay='1000'
-                    data-aos-duration='1500'
+                    data-aos-duration='2500'
                     data-aos-easing='ease-in-out'
                     data-aos-mirror='true'
                     data-aos-once='false'
