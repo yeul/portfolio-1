@@ -27,6 +27,9 @@
       font-family: "Decima Pro Bold";
       font-size: 65px;
       letter-spacing: 1mm;
+      @media #{$sm-only} {
+        font-size: 47px;
+      }
       span {
         border: 4px solid white;
         padding: 5px 10px;
@@ -35,6 +38,8 @@
   }
   .about-mars-left,
   .about-mars-right {
+    //true and false only apply to large device sizes. for small/medium device sizes, see sm-md-ul-mars-info-1 & 2.
+    //Can be found in LargeDevices.js.
     .false {
       opacity: 0;
       transition: 0.5s ease-in;
@@ -43,4 +48,11 @@
       transition: opacity 0.5s ease-in;
     }
   }
+}
+
+//Below classNaes only apply to sm-md devices found in SmallDevices.js.
+.sm-md-ul-mars-info-1,
+.sm-md-ul-mars-info-2 {
+  line-height: 2;
+  list-style: none;
 }

@@ -97,16 +97,15 @@
   flex-direction: row;
   justify-content: center;
   .mars-globe-container {
-    height: 700px;
     .mars-globe-img {
       margin-top: 100px;
       max-width: 50vw;
-      // height: 100%;
       @media #{$sm-only} {
         max-width: 80vh;
       }
     }
   }
+
   .about-mars-left,
   .about-mars-right {
     max-width: 20%;
@@ -130,4 +129,17 @@
   .about-mars-right {
     padding-left: 50px;
   }
+}
+
+//Below only applicable to sm-md devices. classNames can be found in SmallDevices.js.
+
+.sm-md-ul-mars-info-1 {
+  margin-top: 200px;
+  margin-bottom: 0px;
+}
+
+.sm-md-ul-mars-info-1,
+.sm-md-ul-mars-info-2 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
