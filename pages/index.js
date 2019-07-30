@@ -57,14 +57,14 @@ class App extends React.Component {
           <div className='row no-gutters'>{this.windowSize()}</div>
         </div>
         <div
-          data-aos='fade-up'
-          data-aos-offset='100'
-          data-aos-delay='50'
-          data-aos-duration='1000'
-          data-aos-easing='ease-in-out'
-          data-aos-mirror='true'
-          data-aos-once='false'
-          data-aos-anchor-placement='top-center'
+          // data-aos='fade-up'
+          // data-aos-offset='100'
+          // data-aos-delay='50'
+          // data-aos-duration='1000'
+          // data-aos-easing='ease-in-out'
+          // data-aos-mirror='true'
+          // data-aos-once='false'
+          // data-aos-anchor-placement='top-center'
           className='cards container-fluid'
         >
           <div className='row'>
@@ -135,7 +135,7 @@ class App extends React.Component {
                 wallpaper='../static/images/hero-mars-surface-6.png'
                 download='Download'
                 cardText='This is the location with the most impressive known gully activity in the Northern hemisphere. Gullies are active in the winter due to carbon dioxide frost, but northern winters are shorter and warmer than southern winters, so there is less frost and less gully activity. 
-                Written by: Alfred McEwen 18 April 2017).'
+                Written by: Alfred McEwen (18 April 2017).'
               />
             </div>
           </div>

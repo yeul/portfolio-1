@@ -14,6 +14,7 @@ const Hero = () => {
             <div className='hero-title-row row no-gutters'>
               <div className='hero-title-col col-lg-12'>
                 <h1 className='hero-title'>Planum Australe</h1>
+                <h2 className='hero-subtitle'>A Tribute to Mars</h2>
               </div>
             </div>
           </div>

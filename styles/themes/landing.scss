@@ -6,7 +6,7 @@
 .hero-title {
   display: flex;
   justify-content: center;
-  color: $primary;
+  color: white;
   font-size: 90px;
   font-family: "Decima Pro Bold Italic";
   letter-spacing: 5mm;
@@ -18,6 +18,9 @@
     text-align: center;
     font-size: 65px;
   }
+}
+.hero-subtitle {
+  letter-spacing: 5px;
 }
 
 .hero-transition-images img {
