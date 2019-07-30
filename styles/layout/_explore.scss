@@ -2,12 +2,14 @@
 
 .deimos {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: row;
   align-items: center;
   .deimos-info-col {
     margin-top: 250px;
     @media #{$md-and-smaller} {
       display: flex;
+      flex: 1 1 auto;
       flex-direction: column;
       align-items: center;
       margin-top: 0px;
@@ -41,19 +43,25 @@
     @media #{$md-and-smaller} {
       margin-top: 50px;
     }
+    @media #{$ie11} {
+      width: 50%;
+    }
   }
 }
 
 .phobos {
   display: flex;
+  flex: 1 1 auto;
   align-items: center;
   margin-bottom: 200px;
   .phobos-info-col {
     display: flex;
+    flex: 1 1 auto;
     flex-direction: column;
     align-items: flex-end;
     @media #{$md-and-smaller} {
       display: flex;
+      flex: 1 1 auto;
       flex-direction: column;
       align-items: center;
     }
@@ -75,6 +83,9 @@
   }
   .phobos-moon-img {
     max-width: 60%;
+    @media #{$ie11} {
+      width: 50%;
+    }
   }
   .phobos-moon-img,
   .phobos-title {
@@ -87,51 +98,55 @@
 .deimos-image-col,
 .phobos-image-col {
   display: flex;
+  flex: 1 1 auto;
   flex-direction: row;
   justify-content: center;
 }
 
-.explore-mars {
-  // width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  .mars-globe-container {
-    height: 100vh;
-    .mars-globe-img {
-      margin-top: 100px;
-      max-width: 50vw;
-      @media #{$sm-only} {
-        max-width: 80vh;
-      }
-    }
+.explore-mars-col {
+  @media #{$ie11} {
+    flex: 1 1 auto;
   }
-
-  .about-mars-left,
-  .about-mars-right {
-    max-width: 20%;
-    ul {
-      flex-direction: column;
-      list-style: none;
-      margin-top: 130px;
-      padding: 0px;
-      li {
-        margin-bottom: 5px;
-        &:last-child {
-          margin-bottom: 0px;
+  .explore-mars {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    .mars-globe-container {
+      .mars-globe-img {
+        margin-top: 100px;
+        max-width: 50vw;
+        @media #{$sm-only} {
+          max-width: 80vh;
         }
       }
     }
-  }
 
-  .about-mars-left {
-    padding-right: 50px;
-  }
-  .about-mars-right {
-    padding-left: 50px;
+    .about-mars-left,
+    .about-mars-right {
+      max-width: 20%;
+      ul {
+        flex-direction: column;
+        list-style: none;
+        margin-top: 130px;
+        padding: 0px;
+        li {
+          margin-bottom: 5px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+
+    .about-mars-left {
+      padding-right: 50px;
+    }
+    .about-mars-right {
+      padding-left: 50px;
+    }
   }
 }
-
 //Below only applicable to sm-md devices. classNames can be found in SmallDevices.js.
 
 .sm-md-ul-mars-info-1 {
@@ -141,6 +156,6 @@
 
 .sm-md-ul-mars-info-1,
 .sm-md-ul-mars-info-2 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
 }

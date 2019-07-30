@@ -22,7 +22,9 @@
   font-size: 15px;
   .mars-globe-container {
     h2 {
-      margin-top: -60%;
+      position: absolute;
+      left: 0px;
+      top: 50%;
       width: 100%;
       text-align: center;
       font-family: "Decima Pro Bold";

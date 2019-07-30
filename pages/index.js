@@ -56,19 +56,9 @@ class App extends React.Component {
         <div className='explore-mars-container container-fluid'>
           <div className='row no-gutters'>{this.windowSize()}</div>
         </div>
-        <div
-          // data-aos='fade-up'
-          // data-aos-offset='100'
-          // data-aos-delay='50'
-          // data-aos-duration='1000'
-          // data-aos-easing='ease-in-out'
-          // data-aos-mirror='true'
-          // data-aos-once='false'
-          // data-aos-anchor-placement='top-center'
-          className='cards container-fluid'
-        >
+        <div className='cards container-fluid'>
           <div className='row'>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='A Frosted Surface'
                 subTitle='HiRise image capturing the seasonal processes of Mars dunes.'
@@ -81,7 +71,7 @@ class App extends React.Component {
                 Written by: Alfred McEwen (13 May 2019).'
               />
             </div>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='Twin Craters in Meridiani Planum'
                 subTitle='HiRise image capturing the seasonal processes of Mars dunes.'
@@ -93,7 +83,7 @@ class App extends React.Component {
                 Written by: Nicole Bardabelias (14 May 2018).'
               />
             </div>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='The Fault in Our Mars'
                 subTitle='HiRise image of the Northern Meridiani Planum faults that have disrupted layered deposits.'
@@ -106,7 +96,7 @@ class App extends React.Component {
             </div>
           </div>
           <div className='row'>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='The Hills in Ganges Chasma'
                 subTitle='HiRise image of a deep canyon at the eastern end of the vast Valles Marineris system on Mars.'
@@ -117,7 +107,7 @@ class App extends React.Component {
                 Written by: Alfred McEwen (25 June 2018).'
               />
             </div>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='Landslides in Cerberus Fossae'
                 subTitle='HiRise image of semi-parallel fissures on Mars formed by faults which pulled the crust apart in the Cerberus region.'
@@ -128,7 +118,7 @@ class App extends React.Component {
                 Written by: Alfred McEwen (15 April 2019).'
               />
             </div>
-            <div className='col-lg-4'>
+            <div className='cards-col col-lg-4'>
               <Card
                 imageTitle='A Winter’s View of a Gullied Crater'
                 subTitle='HiRise image of a Martian crater with many gullies. Seen here are narrow channels and their downslope sediment deposits.'
