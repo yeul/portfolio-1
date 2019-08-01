@@ -1,6 +1,9 @@
 @import "../themes/colors.scss";
 
 .scrollTop-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   right: 30px;
   bottom: 30px;
