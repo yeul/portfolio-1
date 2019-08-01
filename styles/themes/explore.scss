@@ -33,6 +33,9 @@
       @media #{$sm-only} {
         font-size: 47px;
       }
+      @media #{$lg-only} {
+        top: 40%;
+      }
       span {
         border: 4px solid white;
         padding: 5px 10px;

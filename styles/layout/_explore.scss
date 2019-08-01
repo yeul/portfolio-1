@@ -103,51 +103,72 @@
   justify-content: center;
 }
 
-.explore-mars-col {
-  @media #{$ie11} {
-    flex: 1 1 auto;
-  }
-  .explore-mars {
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: row;
-    justify-content: center;
-    .mars-globe-container {
-      .mars-globe-img {
-        margin-top: 100px;
-        max-width: 50vw;
-        @media #{$sm-only} {
-          max-width: 80vh;
-        }
-      }
+.explore-mars-row {
+  .explore-mars-col {
+    @media #{$ie11} {
+      flex: 1 1 auto;
     }
-
-    .about-mars-left,
-    .about-mars-right {
-      max-width: 20%;
-      ul {
-        flex-direction: column;
-        list-style: none;
-        margin-top: 130px;
-        padding: 0px;
-        li {
-          margin-bottom: 5px;
-          &:last-child {
-            margin-bottom: 0px;
+    .explore-mars {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: row;
+      justify-content: center;
+      .mars-globe-container {
+        @media #{$md-and-smaller} {
+          width: 100vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow-x: hidden;
+        }
+        .mars-globe-img {
+          margin-top: 100px;
+          @media #{$lg-and-larger} {
+            max-width: 50vw;
+          }
+          @media #{$md-and-smaller} {
+            height: 100vh;
+          }
+          @media #{$md-and-smaller} and (orientation: landscape) {
+            height: 120vh;
           }
         }
       }
     }
-
-    .about-mars-left {
-      padding-right: 50px;
-    }
-    .about-mars-right {
-      padding-left: 50px;
+  }
+  .about-mars-left,
+  .about-mars-right {
+    max-width: 20%;
+    ul {
+      flex-direction: column;
+      list-style: none;
+      margin-top: 130px;
+      padding: 0px;
+      li {
+        margin-bottom: 5px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
+  .about-mars-left {
+    padding-right: 50px;
+  }
+  .about-mars-right {
+    padding-left: 50px;
+  }
 }
+
 //Below only applicable to sm-md devices. classNames can be found in SmallDevices.js.
+
+.about-mars-row {
+  @media (min-width: 568px) and (max-width: 824px) {
+    margin: 0 auto;
+    width: 525px;
+  }
+}
 
 .sm-md-ul-mars-info-1 {
   margin-top: 200px;

@@ -24,7 +24,7 @@ class App extends React.Component {
    * and you'll actually get either SmallDevices or LargeDevices based on your browser window width.
    */
   windowSize() {
-    if (this.state.width > 320 && this.state.width < 767.98) {
+    if (this.state.width > 320 && this.state.width <= 768) {
       return (
         <Fragment>
           <SmallDevices />
@@ -135,10 +135,10 @@ class App extends React.Component {
             <div className='credit-section'>
               <span>Images & Mars Data Provided By:</span>
               <div className='logos'>
-                <a href='https://www.nasa.gov/'>
+                <a href='https://www.nasa.gov/' target='_blank'>
                   <img className='nasa-logo' src='../static/images/NASA_logo.svg' alt='The NASA insignia' />
                 </a>
-                <a href='https://hirise.lpl.arizona.edu/'>
+                <a href='https://hirise.lpl.arizona.edu/' target='_blank'>
                   <img className='arizona-logo' src='../static/images/Arizona_logo.svg' alt='The University of Arizona insignia' />
                 </a>
               </div>
@@ -159,11 +159,6 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        {/* <div className='container-fluid'>
-          <div className='row no-gutters'>
-            <img className='astronaut' src='../static/images/astronaut.png' />
-          </div> */}
-        {/* </div> */}
         <ScrollTop />
       </React.Fragment>
     );

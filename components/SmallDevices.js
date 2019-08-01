@@ -51,37 +51,39 @@ class SmallDevices extends React.Component {
             </p>
           </div>
         </div>
-        <div className='col-lg-12'>
-          <div className='explore-mars'>
-            <div className='mars-globe-container'>
-              <img
-                data-aos='fade-up'
-                data-aos-offset='200'
-                data-aos-delay='50'
-                data-aos-duration='2000'
-                data-aos-easing='ease-in-out'
-                data-aos-mirror='true'
-                data-aos-once='false'
-                data-aos-anchor-placement='top-center'
-                className='mars-globe-img'
-                src='../static/images/mars-globe.jpg'
-              />
-              <h2
-                data-aos='fade-up'
-                data-aos-offset='200'
-                data-aos-delay='1000'
-                data-aos-duration='2500'
-                data-aos-easing='ease-in-out'
-                data-aos-mirror='true'
-                data-aos-once='false'
-              >
-                <span>Explore Mars</span>
-              </h2>
+        <div className='explore-mars-row row no-gutters'>
+          <div className='explore-mars-col col-lg-12'>
+            <div className='explore-mars'>
+              <div className='mars-globe-container'>
+                <img
+                  data-aos='fade-up'
+                  data-aos-offset='200'
+                  data-aos-delay='50'
+                  data-aos-duration='2000'
+                  data-aos-easing='ease-in-out'
+                  data-aos-mirror='true'
+                  data-aos-once='false'
+                  data-aos-anchor-placement='top-center'
+                  className='mars-globe-img'
+                  src='../static/images/mars-globe.jpg'
+                />
+                <h2
+                  data-aos='fade-up'
+                  data-aos-offset='200'
+                  data-aos-delay='1000'
+                  data-aos-duration='2500'
+                  data-aos-easing='ease-in-out'
+                  data-aos-mirror='true'
+                  data-aos-once='false'
+                >
+                  <span>Explore Mars</span>
+                </h2>
+              </div>
             </div>
           </div>
         </div>
-        <div className='row no-gutters'>
-          <div className='col-lg-12'>
+        <div className='about-mars-row row no-gutters'>
+          <div className='about-mars-col col-lg-12'>
             <div className='about-mars-left'>
               <ul className='sm-md-ul-mars-info-1'>
                 <li>
@@ -118,8 +120,8 @@ class SmallDevices extends React.Component {
             </div>
           </div>
         </div>
-        <div className='row no-gutters'>
-          <div className='col-lg-12'>
+        <div className='about-mars-row row no-gutters'>
+          <div className='about-mars-col col-lg-12'>
             <div className='about-mars-right'>
               <ul className='sm-md-ul-mars-info-2'>
                 <li>
