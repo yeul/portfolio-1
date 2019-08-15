@@ -149,7 +149,7 @@ class App extends React.Component {
           <div className='row no-gutters'>
             <div className='footer-section'>
               <div>
-                <a href='mailto:mpscqw@gmail.com' target='_top'>
+                <a href='mailto:juliamfurman.com' target='_top'>
                   CONTACT
                 </a>
                 <a href='https://github.com/yeul' target='_blank'>

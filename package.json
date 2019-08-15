@@ -18,6 +18,6 @@
     "build": "next build",
     "start": "next start -p $PORT"
   },
-  "author": "",
+  "author": "https://github.com/yeul",
   "license": "ISC"
 }
